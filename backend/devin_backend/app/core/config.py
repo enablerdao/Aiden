@@ -7,7 +7,7 @@ load_dotenv()
 
 class Settings(BaseSettings):
     """Application settings."""
-    PROJECT_NAME: str = "Devin AI System"
+    PROJECT_NAME: str = "Aiden AI System"
     API_V1_STR: str = "/api"
     
     # OpenAI settings

@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 import psycopg
 from app.api import api_router
 
-app = FastAPI(title="Devin AI System", description="AI-powered software development assistant")
+app = FastAPI(title="Aiden AI System", description="AI-powered software development assistant")
 
 # Disable CORS. Do not remove this for full-stack development.
 app.add_middleware(
@@ -20,7 +20,7 @@ app.include_router(api_router, prefix="/api")
 @app.get("/")
 async def root():
     return {
-        "name": "Devin AI System",
+        "name": "Aiden AI System",
         "version": "0.1.0",
         "description": "AI-powered software development assistant"
     }

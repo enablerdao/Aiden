@@ -285,7 +285,7 @@ export function AppContent() {
     <div className="container mx-auto py-8">
       <header className="mb-8 flex items-center justify-between">
         <div className="text-center">
-          <h1 className="text-3xl font-bold mb-2">Devin AI System</h1>
+          <h1 className="text-3xl font-bold mb-2">Aiden AI System</h1>
           <p className="text-muted-foreground">AI-powered software development assistant</p>
         </div>
         <ThemeToggle />

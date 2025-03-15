@@ -1,6 +1,6 @@
 # GitHub Integration
 
-This component provides GitHub API integration for the Devin AI System.
+This component provides GitHub API integration for the Aiden AI System.
 
 ## Features
 

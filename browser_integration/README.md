@@ -1,6 +1,6 @@
 # Browser Integration
 
-This component provides browser automation and web search capabilities for the Devin AI System.
+This component provides browser automation and web search capabilities for the Aiden AI System.
 
 ## Features
 
