@@ -1,6 +1,6 @@
 # Shell Integration
 
-This component provides shell command execution capabilities for the Devin AI System.
+This component provides shell command execution capabilities for the Aiden AI System.
 
 ## Features
 

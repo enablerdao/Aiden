@@ -246,12 +246,12 @@ export function ChatInterface() {
       <div className="flex-1 overflow-y-auto p-4 space-y-4">
         {messages.length === 0 ? (
           <div className="flex flex-col items-center justify-center h-full text-center p-4">
-            <h2 className="text-2xl font-bold mb-2">Welcome to Devin AI System</h2>
+            <h2 className="text-2xl font-bold mb-2">Welcome to Aiden AI System</h2>
             <p className="text-muted-foreground mb-4">
               Your AI-powered software development assistant
             </p>
             <p className="text-sm text-muted-foreground max-w-md">
-              Type a task below to get started. Devin can help you with coding tasks, 
+              Type a task below to get started. Aiden can help you with coding tasks, 
               debugging, code reviews, and more.
             </p>
           </div>

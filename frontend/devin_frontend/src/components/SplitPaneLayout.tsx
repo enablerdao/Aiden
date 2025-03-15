@@ -24,7 +24,7 @@ export function SplitPaneLayout() {
     <div className="h-screen flex flex-col overflow-hidden">
       <header className="flex items-center justify-between p-4 border-b border-border">
         <div className="flex items-center gap-4">
-          <h1 className="text-xl font-bold">Devin AI System</h1>
+          <h1 className="text-xl font-bold">Aiden AI System</h1>
           <div className="flex items-center gap-2">
             <button className="px-3 py-1 text-sm rounded-md bg-secondary text-secondary-foreground">Standard</button>
             <button className="px-3 py-1 text-sm rounded-md hover:bg-secondary hover:text-secondary-foreground">Diff</button>

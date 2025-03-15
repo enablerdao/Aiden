@@ -1,8 +1,8 @@
-# Devin AI System Documentation
+# Aiden AI System Documentation
 
 ## Overview
 
-The Devin AI System is a comprehensive AI-powered software development assistant that provides a range of features to help developers with coding tasks, GitHub operations, shell command execution, and browser automation.
+The Aiden AI System is a comprehensive AI-powered software development assistant that provides a range of features to help developers with coding tasks, GitHub operations, shell command execution, and browser automation.
 
 ## Table of Contents
 
@@ -17,7 +17,7 @@ The Devin AI System is a comprehensive AI-powered software development assistant
 
 ## System Architecture
 
-The Devin AI System follows a modular, service-based architecture with the following components:
+The Aiden AI System follows a modular, service-based architecture with the following components:
 
 ### Backend
 

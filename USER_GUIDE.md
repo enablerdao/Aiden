@@ -1,14 +1,14 @@
-# Devin AI System User Guide
+# Aiden AI System User Guide
 
 ## Introduction
 
-Welcome to the Devin AI System, an AI-powered software development assistant designed to help you with coding tasks, GitHub operations, shell command execution, and browser automation.
+Welcome to the Aiden AI System, an AI-powered software development assistant designed to help you with coding tasks, GitHub operations, shell command execution, and browser automation.
 
 This guide will walk you through how to use the system effectively to boost your productivity as a developer.
 
 ## Getting Started
 
-The Devin AI System is accessible through a web interface at:
+The Aiden AI System is accessible through a web interface at:
 
 - **Frontend URL**: https://devin-clone-app-nikz67cu.devinapps.com
 - **Backend API**: https://app-qwisyttw.fly.dev
@@ -17,7 +17,7 @@ No installation is required to use the web interface. Simply navigate to the URL
 
 ## Main Features
 
-The Devin AI System offers four main features, accessible through tabs in the user interface:
+The Aiden AI System offers four main features, accessible through tabs in the user interface:
 
 1. **Code**: Generate, review, and fix code
 2. **GitHub**: Interact with GitHub repositories
@@ -157,7 +157,7 @@ To use browser operations:
 
 ### Combining Features
 
-The real power of the Devin AI System comes from combining its features. Here are some examples:
+The real power of the Aiden AI System comes from combining its features. Here are some examples:
 
 1. **Code Generation + GitHub**:
    - Generate code for a new feature
@@ -191,6 +191,6 @@ If you encounter issues not covered in this guide, please:
 
 ## Conclusion
 
-The Devin AI System is designed to make your development workflow more efficient by automating common tasks and providing AI-powered assistance. By mastering its features, you can significantly boost your productivity as a developer.
+The Aiden AI System is designed to make your development workflow more efficient by automating common tasks and providing AI-powered assistance. By mastering its features, you can significantly boost your productivity as a developer.
 
 Happy coding!
