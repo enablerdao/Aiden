@@ -1,0 +1,54 @@
+import { useState, useEffect } from 'react';
+import Split from 'react-split';
+import { ChatInterface } from './ChatInterface';
+import { CodeWorkspace } from './CodeWorkspace';
+import { ThemeToggle } from './ui/theme-toggle';
+
+export function SplitPaneLayout() {
+  const [sizes, setSizes] = useState([40, 60]);
+  
+  // Save split sizes to localStorage
+  useEffect(() => {
+    const savedSizes = localStorage.getItem('split-sizes');
+    if (savedSizes) {
+      setSizes(JSON.parse(savedSizes));
+    }
+  }, []);
+  
+  const handleDragEnd = (newSizes: number[]) => {
+    localStorage.setItem('split-sizes', JSON.stringify(newSizes));
+    setSizes(newSizes);
+  };
+  
+  return (
+    <div className="h-screen flex flex-col overflow-hidden">
+      <header className="flex items-center justify-between p-4 border-b border-border">
+        <div className="flex items-center gap-4">
+          <h1 className="text-xl font-bold">Devin AI System</h1>
+          <div className="flex items-center gap-2">
+            <button className="px-3 py-1 text-sm rounded-md bg-secondary text-secondary-foreground">Standard</button>
+            <button className="px-3 py-1 text-sm rounded-md hover:bg-secondary hover:text-secondary-foreground">Diff</button>
+          </div>
+        </div>
+        <ThemeToggle />
+      </header>
+      
+      <Split 
+        sizes={sizes}
+        minSize={300}
+        expandToMin={false}
+        gutterSize={10}
+        gutterAlign="center"
+        snapOffset={30}
+        dragInterval={1}
+        direction="horizontal"
+        cursor="col-resize"
+        className="flex flex-1 overflow-hidden"
+        onDragEnd={handleDragEnd}
+      >
+        <ChatInterface />
+        <CodeWorkspace />
+      </Split>
+    </div>
+  );
+}
