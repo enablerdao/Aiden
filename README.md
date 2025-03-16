@@ -1,54 +1,54 @@
-# Aiden AI System
+# Aiden AI システム
 
-Aiden is an AI-powered software development assistant designed to help developers write, debug, and maintain code more efficiently. Built with a modern UI and powerful backend, Aiden streamlines the development workflow through natural language interaction.
+Aidenは、開発者がコードの作成、デバッグ、保守をより効率的に行うことを支援するAI駆動のソフトウェア開発アシスタントです。モダンなUIと強力なバックエンドを備え、自然言語によるインタラクションを通じて開発ワークフローを効率化します。
 
-## Current Features
+## 現在の機能
 
-- **Interactive Chat Interface**: Communicate with Aiden using natural language to describe your development tasks
-- **Task Breakdown**: Aiden automatically breaks down complex tasks into manageable steps
-- **Real-time Progress Tracking**: Visual progress indicators show you exactly where Aiden is in the task execution
-- **Code Generation**: Generate code snippets and complete functions based on your requirements
-- **Dark Mode Support**: Modern UI with dark mode for comfortable coding in any lighting condition
-- **Split-pane Layout**: Resizable panels for chat and code workspace
-- **Syntax Highlighting**: Beautiful code display with proper syntax highlighting
+- **インタラクティブなチャットインターフェース**: 自然言語を使用してAidenと対話し、開発タスクを説明
+- **タスク分解**: Aidenが複雑なタスクを管理しやすいステップに自動的に分解
+- **リアルタイム進捗追跡**: 視覚的な進捗インジケーターでタスク実行の状況を正確に表示
+- **コード生成**: 要件に基づいてコードスニペットや完全な関数を生成
+- **ダークモード対応**: あらゆる照明条件で快適にコーディングできるモダンなUI
+- **分割パネルレイアウト**: チャットとコードワークスペース用のサイズ変更可能なパネル
+- **構文ハイライト**: 適切な構文ハイライトによる美しいコード表示
 
-## Upcoming Features
+## 今後の機能
 
-- **Browser Automation**: Control web browsers to perform research, testing, and more
-- **GitHub Integration**: Seamless interaction with GitHub repositories, PRs, and issues
-- **Shell Command Execution**: Run terminal commands directly from the chat interface
-- **Supabase Authentication**: Secure user authentication and session management
-- **Memory and Context Retention**: Aiden remembers previous conversations and project context
-- **File System Navigation**: Browse and edit files in your project directly from the UI
-- **Collaborative Coding**: Share sessions with team members for collaborative problem-solving
+- **ブラウザ自動化**: Webブラウザを制御して調査、テストなどを実行
+- **GitHub統合**: GitHubリポジトリ、PR、イシューとのシームレスな連携
+- **シェルコマンド実行**: チャットインターフェースから直接ターミナルコマンドを実行
+- **Supabase認証**: セキュアなユーザー認証とセッション管理
+- **メモリとコンテキスト保持**: Aidenは以前の会話とプロジェクトのコンテキストを記憶
+- **ファイルシステムナビゲーション**: UIから直接プロジェクト内のファイルを閲覧・編集
+- **協調コーディング**: チームメンバーとセッションを共有して共同で問題解決
 
-## Technical Stack
+## 技術スタック
 
-- **Frontend**: React, TypeScript, Vite, Tailwind CSS
-- **Backend**: FastAPI, Python
-- **LLM Integration**: Anthropic Claude API
-- **Authentication**: Supabase (coming soon)
-- **Browser Automation**: browser-use library
+- **フロントエンド**: React, TypeScript, Vite, Tailwind CSS
+- **バックエンド**: FastAPI, Python
+- **LLM統合**: Anthropic Claude API, OpenAI Agents SDK
+- **認証**: Supabase (近日公開)
+- **ブラウザ自動化**: browser-use ライブラリ
 
-## System Prompt
+## システムプロンプト
 
-Aiden uses a sophisticated system prompt to guide its behavior and capabilities. You can view the full system prompt here:
+Aidenは洗練されたシステムプロンプトを使用して、その動作と機能を導きます。完全なシステムプロンプトはこちらで確認できます:
 
-[View Aiden System Prompt](https://github.com/enablerdao/Aiden/blob/devin/1742082634-devin-prompt-system/browser_integration/README.md)
+[Aidenシステムプロンプトを表示](https://github.com/enablerdao/Aiden/blob/main/browser_integration/README.md)
 
-## Getting Started
+## 使い方
 
-1. Clone the repository
-2. Install dependencies for both frontend and backend
-3. Set up environment variables
-4. Run the development servers
+1. リポジトリをクローン
+2. フロントエンドとバックエンドの両方の依存関係をインストール
+3. 環境変数を設定
+4. 開発サーバーを実行
 
-Detailed setup instructions coming soon.
+詳細なセットアップ手順は近日公開予定です。
 
-## Contributing
+## 貢献
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+貢献は歓迎します！プルリクエストを気軽に提出してください。
 
-## License
+## ライセンス
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+このプロジェクトはMITライセンスの下でライセンスされています - 詳細はLICENSEファイルをご覧ください。

@@ -1,0 +1,18 @@
+<svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M20 4L32 10V26L20 32L8 26V10L20 4Z" fill="#0F172A" stroke="#38BDF8" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M20 12L26 15V23L20 26L14 23V15L20 12Z" fill="#0F172A" stroke="#38BDF8" stroke-width="1.5" stroke-linejoin="round"/>
+  <circle cx="20" cy="19" r="2.5" fill="#38BDF8"/>
+  <path d="M20 4V12" stroke="#38BDF8" stroke-width="1.5"/>
+  <path d="M20 26V32" stroke="#38BDF8" stroke-width="1.5"/>
+  <path d="M32 10L26 15" stroke="#38BDF8" stroke-width="1.5"/>
+  <path d="M8 10L14 15" stroke="#38BDF8" stroke-width="1.5"/>
+  <path d="M32 26L26 23" stroke="#38BDF8" stroke-width="1.5"/>
+  <path d="M8 26L14 23" stroke="#38BDF8" stroke-width="1.5"/>
+  
+  <!-- Text "Aiden" -->
+  <path d="M45 26V14H48L52 22L56 14H59V26H56V19L53 25H51L48 19V26H45Z" fill="#FFFFFF"/>
+  <path d="M62 26V14H65V23H72V26H62Z" fill="#FFFFFF"/>
+  <path d="M74 26V14H77V20H82V14H85V26H82V23H77V26H74Z" fill="#FFFFFF"/>
+  <path d="M87 26V14H96V17H90V19H95V22H90V23H96V26H87Z" fill="#FFFFFF"/>
+  <path d="M98 26V14H101V20.5L106 14H109L104.5 19.5L109 26H106L103 21.5L101 23.5V26H98Z" fill="#FFFFFF"/>
+</svg>
