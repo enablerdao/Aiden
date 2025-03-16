@@ -1,6 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Mobile touch-friendly styles */
+@media (max-width: 768px) {
+  /* Increase touch targets for better mobile interaction */
+  button, 
+  [role="button"],
+  a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Improve tap highlight for interactive elements */
+  a:active,
+  button:active {
+    opacity: 0.7;
+  }
+  
+  /* Prevent text selection during touch interactions */
+  .no-select {
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Add overscroll behavior for smoother mobile scrolling */
+  .overflow-y-auto,
+  .overflow-auto {
+    overscroll-behavior-y: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+}
 @layer base {
   :root {
     --radius: 0.5rem;

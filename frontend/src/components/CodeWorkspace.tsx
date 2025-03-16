@@ -4,6 +4,7 @@ import { useTheme } from './ui/theme-provider';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from './ui/tabs';
 import { Button } from './ui/button';
 import { Folder, File, ChevronRight, ChevronDown } from 'lucide-react';
+import { useIsMobile } from '../hooks/use-mobile';
 
 type FileNode = {
   name: string;
@@ -15,6 +16,7 @@ type FileNode = {
 
 export function CodeWorkspace() {
   const { theme } = useTheme();
+  const isMobile = useIsMobile();
   const [selectedFile, setSelectedFile] = useState<string | null>(null);
   const [fileContent, setFileContent] = useState<string>('');
   const [fileTree, setFileTree] = useState<FileNode[]>([
@@ -143,26 +145,51 @@ export function CodeWorkspace() {
         </div>
         
         <TabsContent value="editor" className="flex-1 flex overflow-hidden m-0 p-0">
-          <div className="w-64 border-r border-border overflow-y-auto p-2">
-            {renderFileTree(fileTree)}
-          </div>
+          {!isMobile && (
+            <div className="w-64 border-r border-border overflow-y-auto p-2">
+              {renderFileTree(fileTree)}
+            </div>
+          )}
           
           <div className="flex-1 overflow-hidden">
-            {selectedFile ? (
+            {isMobile && selectedFile && (
+              <div className="p-2 border-b border-border flex items-center justify-between">
+                <span className="text-sm font-medium truncate">{selectedFile.split('/').pop()}</span>
+                <Button 
+                  variant="ghost" 
+                  size="sm" 
+                  onClick={() => setSelectedFile(null)}
+                  className="h-8 w-8 p-0"
+                >
+                  <ChevronDown className="h-4 w-4" />
+                </Button>
+              </div>
+            )}
+            
+            {isMobile && !selectedFile && (
+              <div className="h-full overflow-y-auto p-2">
+                {renderFileTree(fileTree)}
+              </div>
+            )}
+            
+            {(!isMobile || selectedFile) ? (
               <Editor
                 height="100%"
                 defaultLanguage="typescript"
                 defaultValue={fileContent}
                 theme={theme === 'dark' ? 'vs-dark' : 'light'}
                 options={{
-                  minimap: { enabled: false },
+                  minimap: { enabled: !isMobile },
                   scrollBeyondLastLine: false,
-                  fontSize: 14,
-                  lineNumbers: 'on',
+                  fontSize: isMobile ? 12 : 14,
+                  lineNumbers: isMobile ? 'off' : 'on',
                   readOnly: false,
+                  wordWrap: isMobile ? 'on' : 'off',
                 }}
               />
-            ) : (
+            ) : null}
+            
+            {!isMobile && !selectedFile && (
               <div className="flex items-center justify-center h-full text-muted-foreground">
                 <p>Select a file to view and edit</p>
               </div>
