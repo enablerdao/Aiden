@@ -124,11 +124,11 @@ The Browser Automation feature allows you to:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/devin-system.git
-cd devin-system
+git clone https://github.com/yourusername/aiden-system.git
+cd aiden-system
 
 # Set up Python environment
-cd backend/devin_backend
+cd backend
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
@@ -147,7 +147,7 @@ uvicorn app.main:app --reload
 
 ```bash
 # Navigate to frontend directory
-cd frontend/devin_frontend
+cd frontend
 
 # Install dependencies
 npm install
@@ -346,10 +346,10 @@ The backend can be deployed using the following methods:
 
 ```bash
 # Navigate to backend directory
-cd backend/devin_backend
+cd backend
 
 # Deploy to Fly.io
-<deploy_backend dir="/path/to/backend/devin_backend"/>
+<deploy_backend dir="/path/to/backend"/>
 ```
 
 ### Frontend Deployment
@@ -360,13 +360,13 @@ The frontend can be deployed using the following methods:
 
 ```bash
 # Navigate to frontend directory
-cd frontend/devin_frontend
+cd frontend
 
 # Build the frontend
 npm run build
 
 # Deploy the build directory
-<deploy_frontend dir="/path/to/frontend/devin_frontend/dist"/>
+<deploy_frontend dir="/path/to/frontend/dist"/>
 ```
 
 ## Troubleshooting

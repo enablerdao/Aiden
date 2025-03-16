@@ -1,0 +1,24 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0F172A"/>
+  
+  <!-- Background pattern -->
+  <path opacity="0.05" d="M0 0L1200 630M1200 0L0 630" stroke="#38BDF8" stroke-width="2"/>
+  <path opacity="0.05" d="M600 0V630M0 315H1200" stroke="#38BDF8" stroke-width="2"/>
+  
+  <!-- Logo -->
+  <g transform="translate(450, 180)">
+    <path d="M150 30L240 75V195L150 240L60 195V75L150 30Z" fill="#1E293B" stroke="#38BDF8" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M150 90L195 112.5V172.5L150 195L105 172.5V112.5L150 90Z" fill="#1E293B" stroke="#38BDF8" stroke-width="6" stroke-linejoin="round"/>
+    <circle cx="150" cy="142.5" r="15" fill="#38BDF8"/>
+    <path d="M150 30V90" stroke="#38BDF8" stroke-width="6"/>
+    <path d="M150 195V240" stroke="#38BDF8" stroke-width="6"/>
+    <path d="M240 75L195 112.5" stroke="#38BDF8" stroke-width="6"/>
+    <path d="M60 75L105 112.5" stroke="#38BDF8" stroke-width="6"/>
+    <path d="M240 195L195 172.5" stroke="#38BDF8" stroke-width="6"/>
+    <path d="M60 195L105 172.5" stroke="#38BDF8" stroke-width="6"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="600" y="450" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="white" text-anchor="middle">Aiden AI システム</text>
+  <text x="600" y="520" font-family="Arial, sans-serif" font-size="36" fill="#38BDF8" text-anchor="middle">AI駆動のソフトウェア開発アシスタント</text>
+</svg>
